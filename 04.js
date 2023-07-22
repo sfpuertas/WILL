@@ -13,6 +13,15 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+var simetrico = true;
+var numero= num.toString();
+  for(var i = 0; i < (numero.length / 2); i++){
+    if(numero.charAt(i) != numero.charAt(numero.length-1-i)){
+      simetrico = false;
+      return(simetrico);
+    }
+  }
+  return(simetrico);
 
 }
 
